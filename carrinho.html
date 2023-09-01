@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="/style/loja.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800&family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loadCart('carrinho')">
+    <script src="/script/functions.js"></script>
+    <header>
+      <div class="header-itens">
+        <a href="loja.html"
+          ><div class="header-logo">
+            <img class="logo" src="/img/clotilde.svg" alt="logo-clotilde" />
+            <h1>CLOTILDE</h1>
+          </div></a
+        >
+        <div class="header-search">
+          <input class="searchbox" type="text" placeholder="Buscar" />
+        </div>
+
+        <div class="header-menu">
+          <div class="opcoes">Sobre</div>
+          <div class="opcoes">Loja</div>
+          <div class="opcoes">Entre em contato</div>
+          <img
+            class="carrinho"
+            src="/img/vista-lateral-vazia-do-carrinho-de-compras.svg"
+            alt="Carrinho"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="cart-page">
+      <div class="carrinho-texto">CARRINHO</div>
+      <div id="cart-container"></div>
+    </div>
+  </body>
+</html>

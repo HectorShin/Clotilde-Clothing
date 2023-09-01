@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    top: 0;
+    opacity: 90%;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header-itens {
+    display: flex;
+    height: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    margin-left: 100px;
+    margin-right: 100px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.searchbox{
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border-style:solid;
+    border-width: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-menu {
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opcoes {
+    cursor: pointer;
+}
+
+.carrinho {
+    height: 35px;
+    cursor: pointer;
+}
+
+.page {
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+
+.stack {
+    position: relative;
+    height: 500px;
+}
+
+.text-over-img {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content:center;
+    width: 100%;
+    align-items: center;
+}
+
+.motivacional {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.risco {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.random-img {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    align-self: center;
+    opacity: 80%;
+}
+
+.produtos {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-rows: 130px 1fr;
+
+}
+
+.produtos-texto {
+    align-self: center;
+    justify-self: center;
+}
+
+#produtos-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+}
+
+.um-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.produto-foto {
+    max-width: 350px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+    opacity: 50%;
+    font-size: 16px;
+}
+
+.tamanhos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.tamanho {
+    padding: 5px 20px 5px 20px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    cursor : pointer;
+}
+
+.cart-page {
+    margin-top: 80px;
+    background-color: rgb(239, 239, 239);
+    padding-bottom: 800px;
+}
+
+.carrinho-texto {
+    margin-left: 10%;
+    margin-right:10%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#cart-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-div {
+    height: 90px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produto-foto {
+    height: 90%;
+    margin-bottom: 0;
+}
+
+.produto-nome {
+    flex: 2;
+    margin-left: 80px;
+    size: 20px;
+}
+
+.produto-preco {
+    margin-left: 60px;
+}
+
+.carrinho-total {
+    height: 60px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}

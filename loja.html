@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOTILEDE</title>
+    <link rel="stylesheet" href="/style/loja.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800&family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    onLoad="fetchAsync('https://entregavel.polijrinternal.com/produtos', true)"
+  >
+    <script src="/script/functions.js"></script>
+    <header>
+      <div class="header-itens">
+        <a href="loja.html"
+          ><div class="header-logo">
+            <img class="logo" src="/img/clotilde.svg" alt="logo-clotilde" />
+            <h1 class="inicio">CLOTILDE</h1>
+          </div></a
+        >
+
+        <div class="header-search">
+          <input class="searchbox" type="text" placeholder="Buscar" />
+        </div>
+
+        <div class="header-menu">
+          <div class="opcoes">Sobre</div>
+          <div class="opcoes">Loja</div>
+          <div class="opcoes">Entre em contato</div>
+          <a href="carrinho.html"
+            ><img
+              class="carrinho"
+              src="/img/vista-lateral-vazia-do-carrinho-de-compras.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="page">
+      <div class="stack">
+        <div class="text-over-img">
+          <h1 class="motivacional">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            illo."
+          </h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            fugiat mollitia vel repellendus dignissimos ad voluptatibus sequi
+            maxime necessitatibus fuga.
+          </p>
+        </div>
+        <div class="random-img">
+          <img
+            src="https://source.unsplash.com/random/1920x500?dress"
+            alt="Random-image"
+          />
+        </div>
+      </div>
+      <div class="produtos">
+        <div class="produtos-texto">
+          <h1>PRODUTOS</h1>
+        </div>
+        <div id="produtos-flex"></div>
+      </div>
+    </div>
+  </body>
+</html>
